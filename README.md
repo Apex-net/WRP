@@ -1,4 +1,6 @@
 WRP
 ===
 
-Web Report Preview: un porting sperimentale per un'applicazione Web e/o Web API per la fruizione di reports "Crystal Report" 
+Web Report Preview: Web Report Preview: an experimental Web App / Web API using Crystal Reports
+
+
