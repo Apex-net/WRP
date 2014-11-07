@@ -14,5 +14,5 @@ Occorre installare i seguenti tools:
 Installare una qualsiasi versione non express
 
 ### SAP Crystal Reports, Developer Version for Visual Studio 
-Puoi [scaricare qui](http://scn.sap.com/community/crystal-reports-for-visual-studio)
+Puoi [scaricare da questo link](http://scn.sap.com/community/crystal-reports-for-visual-studio)
 
