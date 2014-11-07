@@ -8,6 +8,8 @@ Web Report Preview: Web Report Preview: an experimental Web App / Web API using 
 Requisiti
 --------------------------
 
+Occorre installare i seguenti tools:
+
 ### Visual Studio 2013
 
 ### SAP CRYSTAL REPORTS, DEVELOPER VERSION FOR MICROSOFT VISUAL STUDIO 
