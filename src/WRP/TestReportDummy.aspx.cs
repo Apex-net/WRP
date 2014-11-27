@@ -13,13 +13,14 @@ namespace WebReportPreview
         {
             // label
             string is64bitProcess = System.Environment.Is64BitProcess.ToString();
-            Label1.Text = "Below, there is a Crystal Report" + " - " + "Is it a 64bit Process? " + is64bitProcess;
+            Label1.Text = "Below, there is a report built with Crystal Report" + " - " + "Is it a 64bit Process? " + is64bitProcess;
             Label1.Font.Bold = true;
 
             // Report viewer
             CrystalReportViewer1.HasCrystalLogo = false;
             CrystalReportViewer1.HasRefreshButton = true;
             CrystalReportViewer1.ToolPanelView = CrystalDecisions.Web.ToolPanelViewType.None;
+            //CrystalReportViewer1.PrintMode = CrystalDecisions.Web.PrintMode.ActiveX;
 
         }
     }
