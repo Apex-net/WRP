@@ -71,6 +71,7 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="TestReportDummy.aspx" />
+    <Content Include="TestReportWithDB.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -91,6 +92,19 @@
       <DependentUpon>CrystalReportDummy.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="TestReports\ReportWithOracle.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportWithOracle.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TestReportWithDB.aspx.cs">
+      <DependentUpon>TestReportWithDB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestReportWithDB.aspx.designer.cs">
+      <DependentUpon>TestReportWithDB.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -101,9 +115,19 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrystalReportDummy.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="TestReports\ReportWithOracle.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportWithOracle.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WRP.Engine\WRP.Engine.csproj">
+      <Project>{12ed4ef9-b100-4bd3-9d3f-3edecb5a24d8}</Project>
+      <Name>WRP.Engine</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

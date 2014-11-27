@@ -12,7 +12,7 @@ namespace WRP.Engine
     /// <summary>
     /// 
     /// </summary>
-    class CrystalReport
+    public class CrystalReport
     {
         // Class Variables
 		protected string csServerName, csUserID, csPassword, csDatabaseName;
