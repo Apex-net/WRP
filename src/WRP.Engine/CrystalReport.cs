@@ -216,7 +216,7 @@ namespace WRP.Engine
 		}
 
         /// <summary>
-        /// Forza il cambio delle proprietà di connessione al db su tutte sul report principale, su tutte le tabelle e su tutti i sottoreport
+        /// Forza il cambio delle proprietà di connessione al db sul report principale, su tutte le tabelle e su tutti i sottoreport
         /// </summary>
         /// <param name="document"></param>
         private void ApplyLoginInfo(ReportDocument document)

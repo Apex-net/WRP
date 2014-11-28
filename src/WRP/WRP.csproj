@@ -69,16 +69,42 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ApexNetPreview.aspx" />
+    <Content Include="ExportPreview.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="ReadMe\ReadMe.txt" />
+    <Content Include="RichPreview.aspx" />
     <Content Include="TestReportDummy.aspx" />
     <Content Include="TestReportWithDB.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApexNetPreview.aspx.cs">
+      <DependentUpon>ApexNetPreview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApexNetPreview.aspx.designer.cs">
+      <DependentUpon>ApexNetPreview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\Utilities.cs" />
+    <Compile Include="ExportPreview.aspx.cs">
+      <DependentUpon>ExportPreview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExportPreview.aspx.designer.cs">
+      <DependentUpon>ExportPreview.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RichPreview.aspx.cs">
+      <DependentUpon>RichPreview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RichPreview.aspx.designer.cs">
+      <DependentUpon>RichPreview.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TestReportDummy.aspx.cs">
       <DependentUpon>TestReportDummy.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -108,6 +134,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="App_GlobalResources\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
