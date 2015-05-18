@@ -25,12 +25,15 @@ namespace WebReportPreview
         {
 
             // set up report
-            string lsReportPath = @"TestReports/ReportWithOracle.rpt",
-                lsServerName = "odbc_oracle", lsUserID = "ANA", lsPassword = "ANA", lsDatabaseName = "", lsPrefixDatabaseTable = "ANA.";
+            string lsReportPath = @"TestReports/ReportWithOracleBocconi.rpt",
+                lsServerName = "odbc_oracle_bocconi", lsUserID = "UNIBOCCONI_AGE20_DEV", lsPassword = "age", lsDatabaseName = "", 
+                lsPrefixDatabaseTable = "UNIBOCCONI_AGE20_DEV.",
+                lsSelectionFormula = "UpperCase ({AGE_UTENTI.Nome}) = 'ANDREA'";
             lsReportPath = Server.MapPath(lsReportPath);
             ReportDocument lReportDocument;
             CrystalReport lGeneral_CR = new CrystalReport(lsServerName, lsUserID, lsPassword, lsDatabaseName, lsPrefixDatabaseTable);
             lReportDocument = lGeneral_CR.PrepareReport(lsReportPath);
+            lReportDocument = lGeneral_CR.AddSelectionFormula(lReportDocument, lsSelectionFormula);
 
             // appareance
             CrystalReportViewer1.HasCrystalLogo = false;

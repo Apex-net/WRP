@@ -16,14 +16,14 @@ namespace WebReportPreview.TestReports {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class CrystalReportDummy : ReportClass {
+    public class ReportWithOracleBocconi : ReportClass {
         
-        public CrystalReportDummy() {
+        public ReportWithOracleBocconi() {
         }
         
         public override string ResourceName {
             get {
-                return "CrystalReportDummy.rpt";
+                return "ReportWithOracleBocconi.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace WebReportPreview.TestReports {
         
         public override string FullResourceName {
             get {
-                return "WebReportPreview.TestReports.CrystalReportDummy.rpt";
+                return "WebReportPreview.TestReports.ReportWithOracleBocconi.rpt";
             }
             set {
                 // Do nothing
@@ -87,20 +87,12 @@ namespace WebReportPreview.TestReports {
                 return this.ReportDefinition.Sections[4];
             }
         }
-        
-        [Browsable(false)]
-        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_ProvaParametro {
-            get {
-                return this.DataDefinition.ParameterFields[0];
-            }
-        }
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedCrystalReportDummy : Component, ICachedReport {
+    public class CachedReportWithOracleBocconi : Component, ICachedReport {
         
-        public CachedCrystalReportDummy() {
+        public CachedReportWithOracleBocconi() {
         }
         
         [Browsable(false)]
@@ -137,7 +129,7 @@ namespace WebReportPreview.TestReports {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            CrystalReportDummy rpt = new CrystalReportDummy();
+            ReportWithOracleBocconi rpt = new ReportWithOracleBocconi();
             rpt.Site = this.Site;
             return rpt;
         }

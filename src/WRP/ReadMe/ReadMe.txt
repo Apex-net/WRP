@@ -14,8 +14,8 @@ default per ogni applicativo, attraverso la query string e/o il post è possibil
 singolo report.
 
 Es: 
-http://localhost/WRP/ApexNetPreview.aspx?ReportPath=ReportTest/TestOperatCRM.rpt&PreviewType=EXP
-&ExportFormatType=pdf&sf={ST_OPERATORI.MATR_OP}>'000001'&p1=Intestazione&v1=SI
+http://localhost/WRP/ApexNetPreview.aspx?ReportPath=TestReports/ReportWithOracleBocconi.rpt&PreviewType=EXP&ExportFormatType=pdf&sf=UpperCase ({AGE_UTENTI.Nome}) = 'ANDREA'
+http://localhost/WRP/ApexNetPreview.aspx?ReportPath=TestReports/ReportWithOracleBocconi.rpt&PreviewType=RIC&sf=UpperCase ({AGE_UTENTI.Nome}) = 'ANDREA'
 
 Per tutti i parametri previsti il meccamismo è del tipo chiave e valore.
 
@@ -138,8 +138,6 @@ il resto è opzionale.
   HasRefreshButton         Indica se il corrispondente item, su toolbar di RichPreview, verrà visualizzato (1) o meno (0)  
 
   HasPrintButton           Indica se il corrispondente item, su toolbar di RichPreview, verrà visualizzato (1) o meno (0)  
-
-  HasViewList              Indica se il corrispondente item, su toolbar di RichPreview, verrà visualizzato (1) o meno (0)
 
   HasDrillUpButton         Indica se il corrispondente item, su toolbar di RichPreview, verrà visualizzato (1) o meno (0)
 

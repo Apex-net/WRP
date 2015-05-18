@@ -86,6 +86,12 @@
     <Compile Include="ApexNetPreview.aspx.designer.cs">
       <DependentUpon>ApexNetPreview.aspx</DependentUpon>
     </Compile>
+    <Compile Include="TestReports\ReportWithOracleBocconi.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportWithOracleBocconi.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Utilities\Utilities.cs" />
     <Compile Include="ExportPreview.aspx.cs">
       <DependentUpon>ExportPreview.aspx</DependentUpon>
@@ -145,6 +151,10 @@
     <EmbeddedResource Include="TestReports\ReportWithOracle.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ReportWithOracle.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestReports\ReportWithOracleBocconi.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportWithOracleBocconi.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

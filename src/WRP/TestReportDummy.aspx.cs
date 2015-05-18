@@ -19,7 +19,9 @@ namespace WebReportPreview
             // Report viewer
             CrystalReportViewer1.HasCrystalLogo = false;
             CrystalReportViewer1.HasRefreshButton = true;
+
             CrystalReportViewer1.ToolPanelView = CrystalDecisions.Web.ToolPanelViewType.None;
+            //CrystalReportViewer1.HasToggleParameterPanelButton = true;
             //CrystalReportViewer1.PrintMode = CrystalDecisions.Web.PrintMode.ActiveX;
 
         }
