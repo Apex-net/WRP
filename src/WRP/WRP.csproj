@@ -61,6 +61,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\PublishProfiles\ProfileWRP.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -85,6 +86,12 @@
     </Compile>
     <Compile Include="ApexNetPreview.aspx.designer.cs">
       <DependentUpon>ApexNetPreview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestReports\ReportSqlserverCRM.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportSqlserverCRM.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="TestReports\ReportWithOracleBocconi.cs">
       <AutoGen>True</AutoGen>
@@ -147,6 +154,10 @@
     <EmbeddedResource Include="TestReports\CrystalReportDummy.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrystalReportDummy.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestReports\ReportSqlserverCRM.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReportSqlserverCRM.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="TestReports\ReportWithOracle.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

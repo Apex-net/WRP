@@ -16,6 +16,7 @@ singolo report.
 Es: 
 http://localhost/WRP/ApexNetPreview.aspx?ReportPath=TestReports/ReportWithOracleBocconi.rpt&PreviewType=EXP&ExportFormatType=pdf&sf=UpperCase ({AGE_UTENTI.Nome}) = 'ANDREA'
 http://localhost/WRP/ApexNetPreview.aspx?ReportPath=TestReports/ReportWithOracleBocconi.rpt&PreviewType=RIC&sf=UpperCase ({AGE_UTENTI.Nome}) = 'ANDREA'
+http://localhost/WRP/ApexNetPreview.aspx?ReportPath=TestReports/ReportSqlserverCRM.rpt&ApplicationName=CRM&PreviewType=RIC
 
 Per tutti i parametri previsti il meccamismo è del tipo chiave e valore.
 
@@ -211,8 +212,6 @@ il resto è opzionale.
 
 2) Installazione id SAP Crystal Reports (developer version for Microsoft Visual Studio) - runtime 13.x
  
-[!] todo review
-
 3) Gli eventuali file di risorsa (*.resx) relativi ai reports vanno inseriti nella cartella App_GlobalResources
 dell'applicazione seguendo la seguente denominazione: "<NomeReport>.rpt.resx", mentre le traduzioni
 dei report relativi devono essere nominati come "<NomeReport>.rpt.<langCode>.resx".
@@ -224,25 +223,10 @@ per il merge con un pre-esitente file partire sempre, come master, dal nuovo fil
 
 2) Attenzione al chiave "TablePrefix", per evitare problemi occorre valorizzare il valore in maiuscolo
 
-*** Scrittura nel EventLog
-
-[!] todo review
-
 *** Soluzioni a problemi noti:
 
-[!] todo review
-
-1) Nel caso di export nei formati excel e word dalla toolbar della "Modalità RichPreview" 
-potrebbe verificarsi il seguente errore "Errore: DLL export o formato export non valido";
-occorre aggiungere nella variabli di ambiente "Path" di sistema il seguente valore: "C:\Program Files\Business Objects\BusinessObjects Enterprise 12.0\win32_x86" 
-vedi ref. SAP: http://forums.sdn.sap.com/thread.jspa?tstart=0&threadID=1065075)
-
-2) Per problemi riguardanti l'installazione del Print Control(ActiveX) di Crystal Reports 2008  
-fare riferimento al seguente link di SAP:
-http://www.sdn.sap.com/irj/scn/weblogs;jsessionid=(J2EE3417500)ID1617741650DB11112347389125823727End?blog=/pub/wlg/14395
-
-3) Errore lato server: "maximum report processing jobs limit"
-Incrementare il "Print Job Limit", il default è 75; nel caso di CR 2008 vedere la seguente chiave del registry: HKEY_LOCAL_MACHINE\SOFTWARE\Business Objects\Suite 12.0\Report Application Server\InprocServer\PrintJobLimit
+1) Errore lato server: "maximum report processing jobs limit"
+Incrementare il "Print Job Limit", il default è 75; nel caso di CR 13 vedere la seguente chiave del registry: HKEY_LOCAL_MACHINE\SOFTWARE\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Report Application Server\InprocServer\PrintJobLimit
 Fare riferimento al seguente link di SAP:
-http://www.sdn.sap.com/irj/boc/index?rid=/library/uuid/f053713e-3e3d-2c10-2a81-f79259e54023&overridelayout=true
+http://scn.sap.com/community/crystal-reports-for-visual-studio/blog/2014/04/25/what-exactly-is-maximum-report-processing-job-limit-for-crystal-reports
 
