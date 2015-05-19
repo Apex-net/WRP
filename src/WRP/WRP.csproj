@@ -151,22 +151,22 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="TestReports\CrystalReportDummy.rpt">
+    <Content Include="TestReports\CrystalReportDummy.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrystalReportDummy.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TestReports\ReportSqlserverCRM.rpt">
+    </Content>
+    <Content Include="TestReports\ReportSqlserverCRM.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ReportSqlserverCRM.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TestReports\ReportWithOracle.rpt">
+    </Content>
+    <Content Include="TestReports\ReportWithOracle.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ReportWithOracle.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TestReports\ReportWithOracleBocconi.rpt">
+    </Content>
+    <Content Include="TestReports\ReportWithOracleBocconi.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ReportWithOracleBocconi.cs</LastGenOutput>
-    </EmbeddedResource>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
