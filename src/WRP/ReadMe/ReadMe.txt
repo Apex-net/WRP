@@ -206,11 +206,11 @@ il resto è opzionale.
 
 ************************* NOTE PER L'INSTALLAZIONE DI WRP 
 
-*** Pre-requisiti: 
+*** Pre-requisiti su server IIS (7 or above): 
 
-1) .NET Framework 4.0 - Visual Studio 2013
+1) .NET Framework 4.0
 
-2) Installazione id SAP Crystal Reports (developer version for Microsoft Visual Studio) - runtime 13.x
+2) Installazione di SAP Crystal Reports - runtime msi (13.0.13 or above)
  
 3) Gli eventuali file di risorsa (*.resx) relativi ai reports vanno inseriti nella cartella App_GlobalResources
 dell'applicazione seguendo la seguente denominazione: "<NomeReport>.rpt.resx", mentre le traduzioni
