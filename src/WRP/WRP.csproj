@@ -77,7 +77,9 @@
     <Content Include="RichPreview.aspx" />
     <Content Include="TestReportDummy.aspx" />
     <Content Include="TestReportWithDB.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApexNetPreview.aspx.cs">
