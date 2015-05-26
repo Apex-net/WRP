@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WRP.ManageResources.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SaveToFolder" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\temp\Resources Generated</Value>
+    </Setting>
+    <Setting Name="PrefixNameResx" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CRM.</Value>
+    </Setting>
+    <Setting Name="TranslateTextFieldPrefix" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">TT_</Value>
+    </Setting>
+    <Setting Name="TranslateFormulaFieldPrefix" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">TF_</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
