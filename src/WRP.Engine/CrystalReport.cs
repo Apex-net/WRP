@@ -671,11 +671,10 @@ namespace WRP.Engine
                     expFormatType = ExportFormatType.PortableDocFormat;
                     break;
             }
+
             // Export 
-            //
             string uniqueIdentifier = Namefile;
             ExportDocument(reportDoc, expFormatType, PathExport, uniqueIdentifier, ref retPathExport);
-            //
 
             return retPathExport;
         }

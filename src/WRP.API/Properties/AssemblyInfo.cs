@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("WRP.Engine")]
+[assembly: AssemblyTitle("WRP.API")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("WRP.Engine")]
-[assembly: AssemblyCopyright("Copyright ©  2015 Apex-net. All rights reserved.")]
+[assembly: AssemblyProduct("WRP.API")]
+[assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("9f46e90f-23a8-454b-9f5a-7e6faeef10bc")]
+[assembly: Guid("3fbe4d3a-b988-4f49-ac19-fb6c4d0fd25e")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -29,8 +29,7 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-// You can specify all the values or you can default the Build and Revision Numbers 
+// You can specify all the values or you can default the Revision and Build Numbers 
 // by using the '*' as shown below:
-// [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("2015.0.1.0")]
-[assembly: AssemblyFileVersion("2015.0.2.0")]
+[assembly: AssemblyVersion("2015.0.*")]
+[assembly: AssemblyFileVersion("2015.0.3.0")]
