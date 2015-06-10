@@ -671,11 +671,13 @@ namespace WRP.Engine
                     expFormatType = ExportFormatType.PortableDocFormat;
                     break;
             }
+
             // Export 
-            //
             string uniqueIdentifier = Namefile;
             ExportDocument(reportDoc, expFormatType, PathExport, uniqueIdentifier, ref retPathExport);
-            //
+
+            // Rilascia risorse ReportDocument
+            CrystalReport.CloseReportDocument(reportDoc);
 
             return retPathExport;
         }
