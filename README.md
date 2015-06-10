@@ -3,7 +3,8 @@ WRP
 
 Web Report Preview: an experimental Web App / Web API using Crystal Reports
 
-This Web app is based on Web Forms ASP.NET (Framework.NET 4.0).
+The Web app is based on Web Forms ASP.NET (Framework.NET 4.5).
+Web Apis are based on ASP.NET Web API 2 (Framework.NET 4.5).
 
 The 64-bit work processes are fully supported.
 
