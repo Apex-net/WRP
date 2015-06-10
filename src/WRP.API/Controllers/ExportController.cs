@@ -39,21 +39,13 @@ namespace WRP.API.Controllers
         [HttpPut]
         public IHttpActionResult ExportReport([FromBody]ReportConfig reportConfig)
         {
-            string exportPath = "";
-            string errorMessage = "";
-            try
-            {
-                exportPath = ExportDocumentHelper(reportConfig);
-            }
-            catch (Exception ex)
-            {
-                errorMessage = String.Format("WRP.API.Controllers.ExportReport: {0}", ex.Message);
-            }
-
+            string exportReturn = "";
+            exportReturn = ExportDocumentHelper(reportConfig);
+            
             var result = new ResultExport
             {
-                ResultCode = string.IsNullOrEmpty(errorMessage) ? 0 : 1,
-                ResultMessage = string.IsNullOrEmpty(errorMessage) ? "Success" : errorMessage
+                ResultCode = exportReturn == "Success" ? 0 : 1,
+                ResultMessage = exportReturn == "Success" ? "Success" : exportReturn
             };
 
             return this.Ok(result);
@@ -61,19 +53,29 @@ namespace WRP.API.Controllers
 
         public string ExportDocumentHelper(ReportConfig reportConfig)
         {
-            CrystalReport report = new CrystalReport(serverName: reportConfig.ConnectionServerName, 
-                userID:reportConfig.ConnectionUserDB,
-                password:reportConfig.ConnectionPasswordDB, 
-                databaseName:reportConfig.ConnectionDBName, 
-                prefixDatabaseTable:reportConfig.ConnectionTablePrefix);
+            string exportPath = "";
+            string errorMessage = "";
 
-            string retPathExport = report.ExportDocumentSimple(PathReport: reportConfig.ReportPath,
+            try
+            {
+                CrystalReport report = new CrystalReport(serverName: reportConfig.ConnectionServerName,
+                userID: reportConfig.ConnectionUserDB,
+                password: reportConfig.ConnectionPasswordDB,
+                databaseName: reportConfig.ConnectionDBName,
+                prefixDatabaseTable: reportConfig.ConnectionTablePrefix);
+
+                exportPath = report.ExportDocumentSimple(PathReport: reportConfig.ReportPath,
                 SelectionFormula: reportConfig.SelectionFormula,
                 PathExport: reportConfig.ExportPath,
                 Namefile: reportConfig.ExportNamefile,
                 ExportFormat: reportConfig.ExportFormat);
+            }
+            catch (Exception ex)
+            {
+                errorMessage = String.Format("WRP.API.Controllers.ExportReport: {0}", ex.Message);
+            }
 
-            return retPathExport;
+            return string.IsNullOrEmpty(errorMessage) ? "Success" : errorMessage;
         }
        
     }
