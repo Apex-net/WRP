@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WRP.ManageResources", "WRP.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WRP.API", "WRP.API\WRP.API.csproj", "{1F0C2544-A446-4AFB-9FF6-FF058A4834BD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WRP.TestFromDesktop", "WRP.TestFromDesktop\WRP.TestFromDesktop.csproj", "{2A51C8D7-F325-45C4-B809-49DFA57EACF0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{1F0C2544-A446-4AFB-9FF6-FF058A4834BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F0C2544-A446-4AFB-9FF6-FF058A4834BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F0C2544-A446-4AFB-9FF6-FF058A4834BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A51C8D7-F325-45C4-B809-49DFA57EACF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A51C8D7-F325-45C4-B809-49DFA57EACF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A51C8D7-F325-45C4-B809-49DFA57EACF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A51C8D7-F325-45C4-B809-49DFA57EACF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
