@@ -22,7 +22,7 @@ namespace WebReportPreview
 
             CrystalReportViewer1.ToolPanelView = CrystalDecisions.Web.ToolPanelViewType.None;
             //CrystalReportViewer1.HasToggleParameterPanelButton = true;
-            //CrystalReportViewer1.PrintMode = CrystalDecisions.Web.PrintMode.ActiveX;
+            CrystalReportViewer1.PrintMode = CrystalDecisions.Web.PrintMode.ActiveX;
 
         }
     }
