@@ -22,10 +22,6 @@ namespace WebReportPreview
 
         protected void Session_End(Object sender, EventArgs e)
 		{
-            //[!] todo: test (no in windows 10 machine)
-            // 
-            // Current verssion and Service Pack (SP 14) of SAP Crystal Reports, Developer Version for Visual Studio .NET do not support Windows 10 
-
             // Clean up report documents in sessione
             //
             try

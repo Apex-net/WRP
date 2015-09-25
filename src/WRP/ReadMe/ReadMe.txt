@@ -1,5 +1,9 @@
 ﻿************************* Note per il richiamo di ApexNetPreview.aspx (entry point di Web Report Preview)
 
+*** Compatabilità - Attenzione con IIS su windows 10
+* Current verssion and Service Pack (SP 14) of SAP Crystal Reports, Developer Version for Visual Studio .NET do not support Windows 10 
+***
+
 ***** Note generali:
 
 E' possibile "comandare" l'applicativo attraverso la pagina ApexNetPreview.aspx (entry point dell'applicativo).
