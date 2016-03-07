@@ -1,9 +1,5 @@
 ﻿************************* Note per il richiamo di ApexNetPreview.aspx (entry point di Web Report Preview)
 
-*** Compatabilità - Attenzione con IIS su windows 10
-* Current verssion and Service Pack (SP 14) of SAP Crystal Reports, Developer Version for Visual Studio .NET do not support Windows 10 
-***
-
 ***** Note generali:
 
 E' possibile "comandare" l'applicativo attraverso la pagina ApexNetPreview.aspx (entry point dell'applicativo).
@@ -214,7 +210,7 @@ il resto è opzionale.
 
 1) .NET Framework 4.0
 
-2) Installazione di SAP Crystal Reports - runtime msi (13.0.13 or above)
+2) Installazione di SAP Crystal Reports - runtime msi (13.0.16 or above)
  
 3) Gli eventuali file di risorsa (*.resx) relativi ai reports vanno inseriti nella cartella App_GlobalResources
 dell'applicazione seguendo la seguente denominazione: "<NomeReport>.rpt.resx", mentre le traduzioni
