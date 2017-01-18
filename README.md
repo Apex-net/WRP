@@ -18,7 +18,9 @@ You have to install:
 A non-express version of Visual Studio 2015
 
 ### SAP Crystal Reports, Developer Version for Visual Studio
-You must run the Install Executable version (v.13.0.16.x or above)
+Version 13.0.16.x or above
 
-[You can download it from this link](http://scn.sap.com/community/crystal-reports-for-visual-studio)
+[You can download it from this link](https://wiki.scn.sap.com/wiki/display/BOBJ/Crystal+Reports%2C+Developer+for+Visual+Studio+Downloads)
 
+You have to run the Install Executable version for development.
+MSI files, by definition, are for runtime distribution only.
