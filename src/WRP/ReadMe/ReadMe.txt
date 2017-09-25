@@ -210,7 +210,7 @@ il resto è opzionale.
 
 1) .NET Framework 4.0
 
-2) Installazione di SAP Crystal Reports - runtime msi (13.0.16 or above)
+2) Installazione di SAP Crystal Reports - runtime msi (13.0.21 or above)
  
 3) Gli eventuali file di risorsa (*.resx) relativi ai reports vanno inseriti nella cartella App_GlobalResources
 dell'applicazione seguendo la seguente denominazione: "<NomeReport>.rpt.resx", mentre le traduzioni
