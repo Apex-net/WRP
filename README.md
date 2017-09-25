@@ -10,7 +10,7 @@ A non-express version of Visual Studio 2015
 
 Crystal report for visual studio:
  
-* [Visual Studio CRRuntime_64bit_13_0_21.msi](http://downloads.businessobjects.com/akdlm/cr4vs2010/CRforVS_13_0_21.exe)
+* [Visual Studio CRforVS_13_0_21.exe](http://downloads.businessobjects.com/akdlm/cr4vs2010/CRforVS_13_0_21.exe)
 
 You have to run the Install Executable version for development.
 MSI files, by definition, are for runtime distribution only.
